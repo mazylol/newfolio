@@ -24,7 +24,7 @@ export default function Main() {
               alt="My picture"
               layout="fill"
               objectFit="cover"
-              className="rounded-full transition-all transform active:rotate-180"
+              className="rounded-full transition-all active:rotate-180"
             />
           </div>
           <p className="text-7xl text-white font-extrabold pb-5">Mazy</p>
