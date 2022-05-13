@@ -3,23 +3,29 @@ import Link from "next/link";
 import { BsFillHouseFill, BsPersonFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
 
 export default function Nav() {
   return (
-    <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
+    <div className="fixed top-0 left-0 h-screen w-24 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
       <Link href="/">
         <a>
           <SideBarIcon icon={<BsFillHouseFill size="28" />} text="Home" />
         </a>
       </Link>
-      <Link href="/about">
+      <Link href="/skills">
         <a>
-          <SideBarIcon icon={<BsPersonFill size="32" />} text="Socials" />
+          <SideBarIcon icon={<GiSkills size="28" />} text="Skills"/>
         </a>
       </Link>
       <Link href="/projects">
         <a>
           <SideBarIcon icon={<FaCode size="28" />} text="Projects" />
+        </a>
+      </Link>
+      <Link href="/socials">
+        <a>
+          <SideBarIcon icon={<BsPersonFill size="32" />} text="Socials" />
         </a>
       </Link>
       <Link href="https://github.com/mazylol/">
