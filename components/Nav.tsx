@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { BsFillHouseFill, BsPersonFill } from "react-icons/bs";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";
 
 export default function Nav() {
@@ -14,7 +14,7 @@ export default function Nav() {
       </Link>
       <Link href="/about">
         <a>
-          <SideBarIcon icon={<BsPersonFill size="32" />} text="About Me" />
+          <SideBarIcon icon={<BsPersonFill size="32" />} text="Socials" />
         </a>
       </Link>
       <Link href="/projects">
@@ -27,16 +27,11 @@ export default function Nav() {
           <SideBarIcon icon={<AiFillGithub size="32" />} text="GitHub" />
         </a>
       </Link>
-      <Link href="https://twitter.com/mazylol/">
-        <a>
-          <SideBarIcon icon={<AiOutlineTwitter size="32" />} text="Twitter" />
-        </a>
-      </Link>
     </div>
   );
 }
 
-const SideBarIcon = ({ icon, text = "tooltip" }) => (
+const SideBarIcon = ({ icon, text = "Tooltip" }) => (
   <div className="sidebar-icon group">
     {icon}
     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
