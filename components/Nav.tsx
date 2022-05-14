@@ -7,20 +7,20 @@ import { GiSkills } from "react-icons/gi";
 
 export default function Nav() {
   return (
-    <div className="fixed top-0 left-0 h-screen w-24 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
+    <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
       <Link href="/">
         <a>
-          <SideBarIcon icon={<BsFillHouseFill size="28" />} text="Home" />
+          <SideBarIcon icon={<BsFillHouseFill size="32" />} text="Home" />
         </a>
       </Link>
       <Link href="/skills">
         <a>
-          <SideBarIcon icon={<GiSkills size="28" />} text="Skills"/>
+          <SideBarIcon icon={<GiSkills size="32" />} text="Skills" />
         </a>
       </Link>
       <Link href="/projects">
         <a>
-          <SideBarIcon icon={<FaCode size="28" />} text="Projects" />
+          <SideBarIcon icon={<FaCode size="32" />} text="Projects" />
         </a>
       </Link>
       <Link href="/socials">
