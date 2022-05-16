@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsFillHouseFill, BsPersonFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
+import { GiOpenBook } from "react-icons/gi";
 
 export default function Nav() {
   return (
@@ -15,7 +15,7 @@ export default function Nav() {
       </Link>
       <Link href="/skills">
         <a>
-          <SideBarIcon icon={<GiSkills size="32" />} text="Skills" />
+          <SideBarIcon icon={<GiOpenBook size="32" />} text="Skills" />
         </a>
       </Link>
       <Link href="/projects">
