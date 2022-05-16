@@ -30,8 +30,7 @@ export default function SkillList() {
       <div className="skillitem">
         <GiSandSnake size="64" color="#3CCB91" />
         <p className="text-gray-200 font-medium ml-5">
-          I use Typescript in most Javascript frameworks, as well as Discord
-          bots. It is nice, it makes coding for the web a tiny bit less painful.
+          I use Python, mainly for Discord bots. I have been using it less and less as indentaion is annoying. It was my first language.
         </p>
       </div>
       <div className="skillitem">
