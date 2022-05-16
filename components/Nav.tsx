@@ -7,7 +7,7 @@ import { GiSkills } from "react-icons/gi";
 
 export default function Nav() {
   return (
-    <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
+    <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg z-16">
       <Link href="/">
         <a>
           <SideBarIcon icon={<BsFillHouseFill size="32" />} text="Home" />

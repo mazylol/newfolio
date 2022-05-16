@@ -18,6 +18,8 @@ export default function Skills() {
           </span>
           ) .
         </p>
+        <div className="border-b-2 border-dashed border-gray-500 max-w-2xl mx-auto"></div>
+        <SkillList />
       </div>
     </>
   );
