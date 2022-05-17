@@ -14,7 +14,7 @@ export default function Projects() {
         <p className="pb-5 text-3xl text-white font-medium text-center">
           I make things sometimes (the quality is questionable)
         </p>
-        <div className="border-b-2 border-dashed border-gray-500 max-w-2xl mx-auto"></div>
+        <div className="border-b-2 border-dashed border-gray-500 max-w-3xl mx-auto"></div>
         <ProjectList />
       </div>
     </>

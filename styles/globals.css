@@ -11,11 +11,19 @@
     @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 font-bold transition-all duration-100 scale-0 origin-left;
   }
 
-  .skillitem {
+  .skill-item {
     @apply bg-gray-600 text-xl text-white p-5 m-2 rounded-xl flex flex-row ml-16;
   }
 
   .skills-header {
     @apply text-white text-3xl font-bold text-center p-5;
+  }
+
+  .project-item {
+    @apply rounded-xl flex flex-col;
+  }
+
+  .project-container {
+    @apply bg-gray-600/90 sm:mt-16 md:mt-32 lg:mt-64 rounded text-center opacity-0 group-hover:opacity-100 transition-all duration-500;
   }
 }

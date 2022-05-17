@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { BsFillHouseFill, BsPersonFill } from "react-icons/bs";
-import { AiFillGithub } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";
 import { GiOpenBook } from "react-icons/gi";
 
@@ -23,14 +22,9 @@ export default function Nav() {
           <SideBarIcon icon={<FaCode size="32" />} text="Projects" />
         </a>
       </Link>
-      <Link href="/socials">
+      <Link href="/about">
         <a>
-          <SideBarIcon icon={<BsPersonFill size="32" />} text="Socials" />
-        </a>
-      </Link>
-      <Link href="https://github.com/mazylol/">
-        <a>
-          <SideBarIcon icon={<AiFillGithub size="32" />} text="GitHub" />
+          <SideBarIcon icon={<BsPersonFill size="32" />} text="About Me" />
         </a>
       </Link>
     </div>
