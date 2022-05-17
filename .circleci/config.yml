@@ -19,7 +19,7 @@ jobs:
           command: yarn build
   build-windows:
     executor:
-      name: win/vs2019
+      name: win/default
       shell: bash.exe
     steps:
       - checkout
