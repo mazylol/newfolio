@@ -23,6 +23,9 @@ jobs:
       shell: bash.exe
     steps:
       - checkout
+      - node/install:
+          install-yarn: true
+          node-version: '18.1.0'
       - node/install-packages:
           pkg-manager: yarn
       - run:
@@ -33,6 +36,9 @@ jobs:
        xcode: 11.7
     steps:
       - checkout
+      - node/install:
+          install-yarn: true
+          node-version: '18.1.0'
       - node/install-packages:
           pkg-manager: yarn
       - run:
