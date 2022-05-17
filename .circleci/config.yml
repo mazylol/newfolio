@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
   win: circleci/windows@4.1
-  macos: circleci/macos@1.0
+  macos: circleci/macos@2.2.0
 
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
           command: yarn build
   build-macos:
     macos:
-       xcode: 11.0.0
+       xcode: 11.7
     steps:
       - checkout
       - node/install-packages:
