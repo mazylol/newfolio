@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
 executors:
-  with-chrome:
+  node16:
     docker:
       - image: "cypress/base:16.13.0"
 workflows:
@@ -12,6 +12,8 @@ workflows:
           install-command: yarn install --frozen-lockfile
           build: "npm run build"
       - cypress/run:
+          executor: node16
+          browser: chrome
           requires:
             - cypress/install
           record: true
