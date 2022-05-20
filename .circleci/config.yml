@@ -10,6 +10,7 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
+          executor: cypress/base-14
           record: true
           parallel: true
           parallelism: 4
