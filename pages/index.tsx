@@ -28,7 +28,7 @@ export default function Home() {
           </p>
           <div className="text-white">
             <p className="text-5xl font-bold">Such as:</p>
-            <ul className="p-5 text-3xl list-disc">
+            <ul className="p-5 text-3xl">
               <li>Websites (Obviously)</li>
               <li>Discord Bots</li>
               <li>Linux Scripts</li>
