@@ -1,52 +1,16 @@
 version: 2.1
-
 orbs:
-  node: circleci/node@5.0.2
-  win: circleci/windows@4.1
-  macos: circleci/macos@2.2.0
-
-
-jobs:
-  build-linux:
-    docker:
-      - image: cimg/node:18.1.0
-    steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-      - run:
-          name: Build
-          command: yarn build
-  build-windows:
-    executor:
-      name: win/default
-      shell: bash.exe
-    steps:
-      - checkout
-      - node/install:
-          install-yarn: true
-          node-version: '18.1.0'
-      - node/install-packages:
-          pkg-manager: yarn
-      - run:
-          name: Build
-          command: yarn build
-  build-macos:
-    macos:
-       xcode: 11.7
-    steps:
-      - checkout
-      - node/install:
-          node-version: '18.1.0'
-      - node/install-packages:
-          pkg-manager: yarn
-      - run:
-          name: Build
-          command: yarn build
-
+  cypress: cypress-io/cypress@1
 workflows:
-  newfolio:
+  build:
     jobs:
-      - build-linux
-      - build-windows
-      - build-macos
+      - cypress/install:
+          build: "npm run build" # run a custom app build step
+      - cypress/run:
+          requires:
+            - cypress/install
+          record: true # record results on Cypress Dashboard
+          parallel: true # split all specs across machines
+          parallelism: 4 # use 4 CircleCI machines to finish quickly
+          group: "all tests" # name this group "all tests" on the dashboard
+          start: "npm start" # start server before running tests
