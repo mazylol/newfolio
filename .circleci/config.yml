@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@5.0.2
 
 jobs:
-  test:
+  test-cypress:
     docker:
       - image: ubuntu:latest
     steps:
@@ -22,7 +22,7 @@ jobs:
           command: yarn build
       - run:
           name: Cypress
-          command: yarn ci
+          command: yarn e2e:headless
 
 workflows:
   newfolio:
