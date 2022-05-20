@@ -8,10 +8,10 @@ export default function Projects() {
         <title>Mazy | Projects</title>
       </Head>
       <div className="w-full">
-        <p className="p-5 text-7xl text-white font-extrabold text-center">
+        <p className="p-5 text-7xl text-white font-extrabold text-center mx-16">
           Projects
         </p>
-        <p className="pb-5 text-3xl text-white font-medium text-center">
+        <p className="pb-5 text-3xl text-white font-medium text-center mx-16">
           I make things sometimes (the quality is questionable)
         </p>
         <div className="border-b-2 border-dashed border-gray-500 max-w-3xl mx-auto"></div>

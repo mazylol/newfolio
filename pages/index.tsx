@@ -8,7 +8,7 @@ export default function Home() {
         <title>Mazy</title>
       </Head>
       <div className="w-full">
-        <div className="mx-auto text-center p-5">
+        <div className="text-center mx-16 pt-5">
           <div className="h-48 w-48 relative mx-auto">
             <Image
               src="/profile.jpg"
