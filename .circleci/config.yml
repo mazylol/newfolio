@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: Install Deps
-          command: apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb curl
+          command: apt-get install curl
       - node/install:
           node-version: "16.15.0"
           install-yarn: true
