@@ -6,14 +6,14 @@ workflows:
   build:
     jobs:
       - cypress/install:
-          install-command: 7yarn install --frozen-lockfile
-          build: "npm run build" # run a custom app build step
+          install-command: yarn install --frozen-lockfile
+          build: "yarn build" # run a custom app build step
       - cypress/run:
-          executor: cypress/base-16
+          executor: cypress/base:16.13.0
           requires:
             - cypress/install
           record: true # record results on Cypress Dashboard
           parallel: true # split all specs across machines
           parallelism: 4 # use 4 CircleCI machines to finish quickly
           group: "all tests" # name this group "all tests" on the dashboard
-          start: "npm start" # start server before running tests
+          start: "yarn start" # start server before running tests
