@@ -1,6 +1,10 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+executors:
+  with-chrome:
+    docker:
+      - image: "cypress/base:16.13.0"
 workflows:
   build:
     jobs:
@@ -10,7 +14,6 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
-          executor: cypress/base-14
           record: true
           parallel: true
           parallelism: 4
