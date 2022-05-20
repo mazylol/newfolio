@@ -1,20 +1,21 @@
 version: 2.1
+
 orbs:
-  cypress: cypress-io/cypress@1
   node: circleci/node@5.0.2
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:16.15.0
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Build
+          command: yarn build
+
 workflows:
-  build:
+  newfolio:
     jobs:
-      - cypress/install:
-          install-command: yarn install --frozen-lockfile
-          build: "yarn build" # run a custom app build step
-      - cypress/run:
-          executor: cypress/base-15
-          requires:
-            - cypress/install
-          record: true # record results on Cypress Dashboard
-          parallel: true # split all specs across machines
-          parallelism: 4 # use 4 CircleCI machines to finish quickly
-          group: "all tests" # name this group "all tests" on the dashboard
-          start: "yarn start" # start server before running tests
-          wait-on: "http://localhost:3000"
+      - test
