@@ -6,7 +6,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/base:2022.05
+      - image: ubuntu:latest
     steps:
       - checkout
       - node/install:
