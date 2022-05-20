@@ -27,4 +27,4 @@ jobs:
 workflows:
   newfolio:
     jobs:
-      - test
+      - test-cypress
