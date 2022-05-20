@@ -5,14 +5,11 @@ orbs:
 workflows:
   build:
     jobs:
-      - node/install:
-          install-yarn: true
-          node-version: "16.15.0"
-      - node/install-packages:
-          pkg-manager: yarn
       - cypress/install:
+          install-command: 7yarn install --frozen-lockfile
           build: "npm run build" # run a custom app build step
       - cypress/run:
+          executor: cypress/base-16
           requires:
             - cypress/install
           record: true # record results on Cypress Dashboard
