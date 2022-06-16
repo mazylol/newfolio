@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { FaReact, FaVuejs } from 'react-icons/fa';
 import { BiGitBranch } from 'react-icons/bi';
@@ -12,7 +13,9 @@ import {
   SiNuxtdotjs,
   SiVercel,
   SiCloudflare,
-  SiSvelte
+  SiSvelte,
+  SiCircleci,
+  SiNeovim
 } from 'react-icons/si';
 import { FcLinux } from 'react-icons/fc';
 import { GiSandSnake } from 'react-icons/gi';
@@ -136,7 +139,7 @@ export default function SkillList() {
           </a>
         </Link>
         <p className="skill-text">
-          Love Tailwind. I use it to style everything, makes my life way easier.
+          I love Tailwind. I use it to style everything, makes my life way easier.
         </p>
       </div>
       <p className="skills-header">Tools</p>
@@ -183,6 +186,37 @@ export default function SkillList() {
         </Link>
         <p className="skill-text">
           I use Linux on the desktop. I use Arch BTW. I make sure to keep sneaky Bill far away.
+        </p>
+      </div>
+      <div className="skill-item">
+        <Link href="https://circleci.com/">
+          <a>
+            <SiCircleci size="64" color="black" />
+          </a>
+        </Link>
+        <p className="skill-text">
+          I use CircleCI for all of my CI/CD. It is a great tool. It works well with my projects.
+        </p>
+      </div>
+      <p className="skills-header">Editors</p>
+      <div className="skill-item">
+        <Link href="https://code.visualstudio.com/">
+          <a>
+            <Image src="/logos/vscode.svg" width="64" height="64" alt="vscode logo" />
+          </a>
+        </Link>
+        <p className="skill-text">
+          I use VS Code for most of my web projects and other massive things. It is a great editor.
+        </p>
+      </div>
+      <div className="skill-item">
+        <Link href="https://neovim.io/">
+          <a>
+            <SiNeovim size="64" color="#74d05c" />
+          </a>
+        </Link>
+        <p className="skill-text">
+          Neovim is by far my favorite text editor. It is fast, reliable, and a breeze to customize.
         </p>
       </div>
     </div>
