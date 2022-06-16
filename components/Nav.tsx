@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { BsFillHouseFill, BsPersonFill } from "react-icons/bs";
-import { FaCode } from "react-icons/fa";
-import { GiOpenBook } from "react-icons/gi";
+import { BsFillHouseFill, BsPersonFill } from 'react-icons/bs';
+import { FaCode } from 'react-icons/fa';
+import { GiOpenBook } from 'react-icons/gi';
 
 export default function Nav() {
   return (
@@ -31,7 +31,7 @@ export default function Nav() {
   );
 }
 
-const SideBarIcon = ({ icon, text = "Tooltip" }) => (
+const SideBarIcon = ({ icon, text = 'Tooltip' }) => (
   <div className="sidebar-icon group">
     {icon}
     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>

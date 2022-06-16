@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function ProjectList() {
   return (
@@ -8,9 +8,8 @@ export default function ProjectList() {
           <div className="project-container">
             <p className="text-white font-bold text-5xl p-2">Discode</p>
             <p className="sm:text-sm md:text-2xl lg:text-3xl text-gray-200 p-2">
-              Discode is my current endeavor. It is a Discord bot that provides
-              information on Languages, Frameworks, Libraries, Tools, and
-              People.
+              Discode is my current endeavor. It is a Discord bot that provides information on
+              Languages, Frameworks, Libraries, Tools, and People.
             </p>
           </div>
         </div>
@@ -20,8 +19,8 @@ export default function ProjectList() {
           <div className="project-container">
             <p className="text-white font-bold text-5xl p-2">Mazbot</p>
             <p className="sm:text-sm md:text-2xl lg:text-3xl text-gray-200 p-2">
-              Mazbot was my first ever full fledged Discord bot. It is what got
-              me into this hobby. It is kinda broken now but I still love it.
+              Mazbot was my first ever full fledged Discord bot. It is what got me into this hobby.
+              It is kinda broken now but I still love it.
             </p>
           </div>
         </div>

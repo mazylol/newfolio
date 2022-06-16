@@ -12,7 +12,11 @@
   }
 
   .skill-item {
-    @apply bg-gray-600 text-xl text-white p-5 m-2 rounded-xl flex flex-row ml-16;
+    @apply bg-gray-600 hover:bg-gray-500/75 transition-colors text-xl text-white p-5 m-2 rounded-xl flex flex-row ml-16;
+  }
+
+  .skill-text {
+    @apply text-gray-200 font-medium ml-5;
   }
 
   .skills-header {

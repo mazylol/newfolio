@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -20,10 +20,10 @@ export default function Home() {
           </div>
           <p className="text-7xl text-white font-extrabold p-5">Hey 👋</p>
           <p className="text-3xl text-gray-300 font-medium p-5">
-            Heyo, my name is Landon and I like to{" "}
+            Heyo, my name is Landon and I like to{' '}
             <span className="bg-gradient-to-r from-pink-600 to-blue-700 rounded-md text-white p-1">
               create
-            </span>{" "}
+            </span>{' '}
             awesome stuff.
           </p>
           <div className="text-white">
