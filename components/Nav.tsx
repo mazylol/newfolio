@@ -8,24 +8,24 @@ export default function Nav() {
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg z-16">
       <Link href="/">
-        <span id="home" className="mx-2 w-0">
+        <div className="mx-2 w-0" id="homep">
           <SideBarIcon icon={<BsFillHouseFill size="32" />} text="Home" />
-        </span>
+        </div>
       </Link>
       <Link href="/skills">
-        <span id="skills" className="mx-2 w-0">
+        <div className="mx-2 w-0" id="skillsp">
           <SideBarIcon icon={<GiOpenBook size="32" />} text="Skills" />
-        </span>
+        </div>
       </Link>
       <Link href="/projects">
-        <span id="projects" className="mx-2 w-0">
+        <div className="mx-2 w-0" id="projectsp">
           <SideBarIcon icon={<FaCode size="32" />} text="Projects" />
-        </span>
+        </div>
       </Link>
       <Link href="/about">
-        <span id="about" className="mx-2 w-0">
+        <div className="mx-2 w-0" id="aboutp">
           <SideBarIcon icon={<BsPersonFill size="32" />} text="About Me" />
-        </span>
+        </div>
       </Link>
     </div>
   );

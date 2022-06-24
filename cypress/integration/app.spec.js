@@ -1,17 +1,17 @@
 describe('Navigation', () => {
   it('should navigate to the skills page', () => {
     cy.visit('/');
-    cy.get('span[id*=skills]').click();
+    cy.get('#skillsp>div').click();
     cy.url().should('include', '/skills');
   });
   it('should navigate to the projects page', () => {
     cy.visit('/');
-    cy.get('span[id*=projects]').click();
+    cy.get('#projectsp>div').click();
     cy.url().should('include', '/projects');
   });
   it('should navigate to the about page', () => {
     cy.visit('/');
-    cy.get('span[id*=about]').click();
+    cy.get('#aboutp>div').click();
     cy.url().should('include', '/about');
   });
 });
