@@ -24,18 +24,26 @@ export default function About() {
         </p>
         <p className="text-5xl text-white font-medium text-center pb-5 ml-16">Socials</p>
         <div className="flex flex-row justify-center ml-16">
-          <Link href="https://github.com/mazylol">
-            <FaGithub className="mx-2 text-black hover:text-gray-400 transition-colors duration-200 text-7xl" />
-          </Link>
-          <Link href="https://twitter.com/mazylol">
-            <FaTwitter className="mx-2 text-[#1DA1F2] hover:text-gray-400 transition-colors duration-200 text-7xl" />
-          </Link>
-          <Link href="https://www.youtube.com/channel/UCTU12OQOJq55jgqM88P8q0w">
-            <FaYoutube className="mx-2 text-[#FF0000] hover:text-gray-400 transition-colors duration-200 text-7xl" />
-          </Link>
-          <Link href="https://instagram.com/adumbcoder">
-            <FaInstagram className="mx-2 text-pink-600 hover:text-gray-400 transition-colors duration-200 text-7xl" />
-          </Link>
+          <div id="githubp">
+            <Link href="https://github.com/mazylol">
+              <FaGithub className="mx-2 text-black hover:text-gray-400 transition-colors duration-200 text-7xl" />
+            </Link>
+          </div>
+          <div id="twitterp">
+            <Link href="https://twitter.com/mazylol">
+              <FaTwitter className="mx-2 text-[#1DA1F2] hover:text-gray-400 transition-colors duration-200 text-7xl" />
+            </Link>
+          </div>
+          <div id="youtubep">
+            <Link href="https://www.youtube.com/channel/UCTU12OQOJq55jgqM88P8q0w">
+              <FaYoutube className="mx-2 text-[#FF0000] hover:text-gray-400 transition-colors duration-200 text-7xl" />
+            </Link>
+          </div>
+          <div id="instagramp">
+            <Link href="https://instagram.com/adumbcoder">
+              <FaInstagram className="mx-2 text-pink-600 hover:text-gray-400 transition-colors duration-200 text-7xl" />
+            </Link>
+          </div>
         </div>
       </div>
     </>

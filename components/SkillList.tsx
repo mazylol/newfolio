@@ -58,7 +58,7 @@ export default function SkillList() {
         </p>
       </div>
       <div className="skill-item">
-        <Link href="http://www.lua.org/">
+        <Link href="https://www.lua.org/">
           <a>
             <SiLua size="64" color="#000080" />
           </a>
