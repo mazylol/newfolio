@@ -19,7 +19,7 @@ jobs:
           pkg-manager: yarn
       - run:
           name: Update Packages
-          command: yarn install && yarn upgrade
+          command: yarn upgrade
       - run:
           name: Build
           command: yarn build
