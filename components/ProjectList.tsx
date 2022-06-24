@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function ProjectList() {
   return (
     <div className="px-20 grid grid-cols-2 pt-5 pb-5 ml-16 sm:gap-0 md:gap-4 lg:gap-8">
-      <Link href="https://discode.mazy.tk">
+      <Link href="https://discode.mazylol.com">
         <div className="project-item bg-[url('/projects/botatar.png')] group">
           <div className="project-container">
             <p className="text-white font-bold text-5xl p-2">Discode</p>
